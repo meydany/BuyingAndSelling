@@ -16,11 +16,7 @@ import BubbleTransition
 var DIVISION_HEIGHT: CGFloat = 150 //height of one division
 var NUM_OF_DIVISION: CGFloat = 3 //remember to also change in FoldingCell
 var CELL_SPACING: CGFloat = 8 //space between cells
-<<<<<<< HEAD
 var CELL_COUNT: Int = 3
-=======
-var CELL_COUNT: Int = 8
->>>>>>> 945d06f12e57d431e58a6cae297aa6725c4385a4
 
 var currentIndex: Int = 0; //sus dont judge
 
