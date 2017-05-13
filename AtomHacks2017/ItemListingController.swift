@@ -10,7 +10,11 @@ import Foundation
 import UIKit
 import FoldingCell
 import EasyPeasy
+<<<<<<< HEAD
 import FirebaseDatabase
+=======
+import BubbleTransition
+>>>>>>> cb038c0d65a85a1e29148d39165cecc0cc0b0713
 
 var DIVISION_HEIGHT: CGFloat = 150 //height of one division
 var NUM_OF_DIVISION: CGFloat = 3 //remember to also change in FoldingCell
@@ -30,7 +34,7 @@ class ItemListingController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         tableView.estimatedRowHeight = closeHeight
         tableView.rowHeight = UITableViewAutomaticDimension
         
@@ -55,7 +59,6 @@ class ItemListingController: UITableViewController {
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "Image"))
     }
 
-    
     fileprivate func registerCell() {
         tableView.register(ItemFoldingCell.self, forCellReuseIdentifier: String(describing: ItemFoldingCell.self)) //registers custom cell as part of the tableView
     }
