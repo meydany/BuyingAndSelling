@@ -157,7 +157,7 @@
 				TargetAttributes = {
 					8691214C1EC747090037FECA = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = VEFXGBBZ5N;
+						DevelopmentTeam = 9EKLF2UG2H;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -383,7 +383,7 @@
 			baseConfigurationReference = C9CCE3C960EBC8E7441F4F03 /* Pods-AtomHacks2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VEFXGBBZ5N;
+				DEVELOPMENT_TEAM = 9EKLF2UG2H;
 				INFOPLIST_FILE = AtomHacks2017/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -398,7 +398,7 @@
 			baseConfigurationReference = A9DF5E70267049B9C592DD63 /* Pods-AtomHacks2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VEFXGBBZ5N;
+				DEVELOPMENT_TEAM = 9EKLF2UG2H;
 				INFOPLIST_FILE = AtomHacks2017/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -22,9 +22,10 @@ class ItemFoldedCellView: UIView {
     
     public var cellIndex: Int = 0
     
-    @IBOutlet var mainLabel: UILabel!
-    @IBOutlet weak var secondLabel: UILabel!
-    @IBOutlet weak var thirdLabel: UILabel!
+    @IBOutlet var numberLabel: UILabel!
+    @IBOutlet var itemName: UILabel!
+    @IBOutlet var sellerName: UILabel!
+    @IBOutlet var itemCost: UILabel!
     
     init(index: Int) {
         super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
@@ -41,27 +42,26 @@ class ItemFoldedCellView: UIView {
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         //contentView.frame = bounds
         
-        let ref = FIRDatabase.database().reference()
-        
-        ref.child("Listings").child("Object\(cellIndex)").observeSingleEvent(of: .value, with: { (snapshot) in
-            // Get user value
-            print(self.cellIndex)
-            let value = snapshot.value as! [String: String]
-            print(value)
-            self.mainLabel.text = value["ObjectName"]
-            self.secondLabel.text = "$" + value["Price"]!
-            self.thirdLabel.text = value["PersonName"]
-            
-            
-        }) { (error) in
-            print(error.localizedDescription)
-        }
-        
+//        let ref = FIRDatabase.database().reference()
+//        
+//        ref.child("Listings").child("Object\(cellIndex)").observeSingleEvent(of: .value, with: { (snapshot) in
+//            // Get user value
+//            print(self.cellIndex)
+//            let value = snapshot.value as! [String: String]
+//            print(value)
+//            self.mainLabel.text = value["ObjectName"]
+//            self.secondLabel.text = "$" + value["Price"]!
+//            self.thirdLabel.text = value["PersonName"]
+//            
+//            
+//        }) { (error) in
+//            print(error.localizedDescription)
+//        }
         addSubview(contentView)
     }
     
     func customizeCell() {
-        mainLabel.text = "Cell: \(cellIndex)"
+        numberLabel.text = "#\(cellIndex)"
     }
     
     

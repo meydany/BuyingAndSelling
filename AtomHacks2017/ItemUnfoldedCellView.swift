@@ -21,7 +21,15 @@ class ItemUnfoldedCellView: UIView {
     
     public var cellIndex: Int = 0
     
-    @IBOutlet var mainLabel: UILabel!
+    @IBOutlet var numberLabel: UILabel!
+    @IBOutlet var itemName: UILabel!
+    @IBOutlet var itemPicture: UIImageView!
+    @IBOutlet var sellerPicture: UIImageView!
+    @IBOutlet var sellerName: UILabel!
+    @IBOutlet var itemPrice: UILabel!
+    @IBOutlet var itemDescription: UITextView!
+    @IBOutlet var submitButton: UIButton!
+    
     init(index: Int) {
         super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         
@@ -40,7 +48,7 @@ class ItemUnfoldedCellView: UIView {
     }
     
     func customizeCell() {
-        mainLabel.text = "Cell: \(cellIndex)"
+        numberLabel.text = "#\(cellIndex)"
     }
     
     
