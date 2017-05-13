@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84D672851EC77818006C8AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D672841EC77818006C8AE0 /* GoogleService-Info.plist */; };
 		869121511EC747090037FECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869121501EC747090037FECA /* AppDelegate.swift */; };
 		869121531EC747090037FECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869121521EC747090037FECA /* ViewController.swift */; };
 		869121561EC747090037FECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869121541EC747090037FECA /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84D672841EC77818006C8AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8691214D1EC747090037FECA /* AtomHacks2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtomHacks2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		869121501EC747090037FECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		869121521EC747090037FECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				869121571EC747090037FECA /* Assets.xcassets */,
 				869121591EC747090037FECA /* LaunchScreen.storyboard */,
 				8691215C1EC747090037FECA /* Info.plist */,
+				84D672841EC77818006C8AE0 /* GoogleService-Info.plist */,
 				869121661EC753A70037FECA /* ConfigurationBlock.swift */,
 			);
 			path = AtomHacks2017;
@@ -144,7 +147,7 @@
 				TargetAttributes = {
 					8691214C1EC747090037FECA = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 9EKLF2UG2H;
+						DevelopmentTeam = VEFXGBBZ5N;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -177,6 +180,7 @@
 				869121581EC747090037FECA /* Assets.xcassets in Resources */,
 				8691216B1EC755580037FECA /* ItemFoldedCellView.xib in Resources */,
 				869121561EC747090037FECA /* Main.storyboard in Resources */,
+				84D672851EC77818006C8AE0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +199,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		706AD3C8D4FC6228F00A4645 /* [CP] Copy Pods Resources */ = {
@@ -365,8 +369,9 @@
 			baseConfigurationReference = C9CCE3C960EBC8E7441F4F03 /* Pods-AtomHacks2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9EKLF2UG2H;
+				DEVELOPMENT_TEAM = VEFXGBBZ5N;
 				INFOPLIST_FILE = AtomHacks2017/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atomhacks.AtomHacks2017;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,8 +384,9 @@
 			baseConfigurationReference = A9DF5E70267049B9C592DD63 /* Pods-AtomHacks2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9EKLF2UG2H;
+				DEVELOPMENT_TEAM = VEFXGBBZ5N;
 				INFOPLIST_FILE = AtomHacks2017/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atomhacks.AtomHacks2017;
 				PRODUCT_NAME = "$(TARGET_NAME)";

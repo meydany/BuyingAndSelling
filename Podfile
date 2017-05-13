@@ -12,6 +12,10 @@ pod 'FoldingCell', '~> 2.0.3'
 pod 'Eureka'
 pod 'BubbleTransition', '~> 2.0.0'
 
+ pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'FirebaseUI/Storage'
 
   # Pods for AtomHacks2017
 
