@@ -15,6 +15,15 @@ pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
 pod 'FirebaseUI/Storage'
+<<<<<<< HEAD
+=======
+
+ pod 'Firebase/Core'
+ pod 'Firebase/Database'
+ pod 'Firebase/Storage'
+ pod 'FirebaseUI/Storage'
+
+>>>>>>> 945d06f12e57d431e58a6cae297aa6725c4385a4
 pod 'FacebookCore'
 pod 'FacebookLogin'
 pod 'FacebookShare'

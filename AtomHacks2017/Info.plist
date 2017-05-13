@@ -40,19 +40,39 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+<<<<<<< HEAD
     
+=======
+>>>>>>> 945d06f12e57d431e58a6cae297aa6725c4385a4
     <key>CFBundleURLTypes</key>
     <array>
         <dict>
             <key>CFBundleURLSchemes</key>
             <array>
+<<<<<<< HEAD
                 <string>fb238247153247096</string>
+=======
+                <string>fb1681316998839118</string>
+>>>>>>> 945d06f12e57d431e58a6cae297aa6725c4385a4
             </array>
         </dict>
     </array>
     <key>FacebookAppID</key>
+<<<<<<< HEAD
     <string>238247153247096</string>
     <key>FacebookDisplayName</key>
     <string>Atomnacks</string>
+=======
+    <string>1681316998839118</string>
+    <key>FacebookDisplayName</key>
+    <string>AtomHacks2017</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
+        <string>fb-messenger-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+    </array>
+>>>>>>> 945d06f12e57d431e58a6cae297aa6725c4385a4
 </dict>
 </plist>

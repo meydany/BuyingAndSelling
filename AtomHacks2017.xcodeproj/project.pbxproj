@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		84D672871EC78D4F006C8AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D672861EC78D4F006C8AE0 /* GoogleService-Info.plist */; };
 		865332A01EC78766009FE3DC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8653329E1EC78766009FE3DC /* Info.plist */; };
+		865332CA1EC7AB3F009FE3DC /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865332C91EC7AB3F009FE3DC /* FacebookLoginViewController.swift */; };
+		865332CC1EC7C0AE009FE3DC /* FacebookLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865332CB1EC7C0AE009FE3DC /* FacebookLogin.xib */; };
 		867CADAE1EC784EF00DB6406 /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867CADAC1EC784EF00DB6406 /* ImageRow.swift */; };
 		867CADAF1EC784EF00DB6406 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867CADAD1EC784EF00DB6406 /* ImagePickerController.swift */; };
 		869121511EC747090037FECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869121501EC747090037FECA /* AppDelegate.swift */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		84D672861EC78D4F006C8AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8653329E1EC78766009FE3DC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		865332C91EC7AB3F009FE3DC /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
+		865332CB1EC7C0AE009FE3DC /* FacebookLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FacebookLogin.xib; path = ../FacebookLogin.xib; sourceTree = "<group>"; };
 		867CADAC1EC784EF00DB6406 /* ImageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
 		867CADAD1EC784EF00DB6406 /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
 		8691214D1EC747090037FECA /* AtomHacks2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtomHacks2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +114,8 @@
 				869121661EC753A70037FECA /* ConfigurationBlock.swift */,
 				867CADAC1EC784EF00DB6406 /* ImageRow.swift */,
 				867CADAD1EC784EF00DB6406 /* ImagePickerController.swift */,
+				865332C91EC7AB3F009FE3DC /* FacebookLoginViewController.swift */,
+				865332CB1EC7C0AE009FE3DC /* FacebookLogin.xib */,
 			);
 			path = AtomHacks2017;
 			sourceTree = "<group>";
@@ -190,6 +196,7 @@
 				869121581EC747090037FECA /* Assets.xcassets in Resources */,
 				8691216B1EC755580037FECA /* ItemFoldedCellView.xib in Resources */,
 				869121561EC747090037FECA /* Main.storyboard in Resources */,
+				865332CC1EC7C0AE009FE3DC /* FacebookLogin.xib in Resources */,
 				84D672871EC78D4F006C8AE0 /* GoogleService-Info.plist in Resources */,
 				865332A01EC78766009FE3DC /* Info.plist in Resources */,
 			);
@@ -210,7 +217,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		706AD3C8D4FC6228F00A4645 /* [CP] Copy Pods Resources */ = {
@@ -255,6 +262,7 @@
 				869121631EC752A40037FECA /* ItemListingController.swift in Sources */,
 				869121531EC747090037FECA /* ViewController.swift in Sources */,
 				869121651EC753390037FECA /* ItemFoldingCell.swift in Sources */,
+				865332CA1EC7AB3F009FE3DC /* FacebookLoginViewController.swift in Sources */,
 				867CADAE1EC784EF00DB6406 /* ImageRow.swift in Sources */,
 				869121511EC747090037FECA /* AppDelegate.swift in Sources */,
 				867CADAF1EC784EF00DB6406 /* ImagePickerController.swift in Sources */,
@@ -383,7 +391,15 @@
 			baseConfigurationReference = C9CCE3C960EBC8E7441F4F03 /* Pods-AtomHacks2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = VEFXGBBZ5N;
+=======
+				DEVELOPMENT_TEAM = 9EKLF2UG2H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
+>>>>>>> 945d06f12e57d431e58a6cae297aa6725c4385a4
 				INFOPLIST_FILE = AtomHacks2017/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -398,7 +414,15 @@
 			baseConfigurationReference = A9DF5E70267049B9C592DD63 /* Pods-AtomHacks2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = VEFXGBBZ5N;
+=======
+				DEVELOPMENT_TEAM = 9EKLF2UG2H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
+>>>>>>> 945d06f12e57d431e58a6cae297aa6725c4385a4
 				INFOPLIST_FILE = AtomHacks2017/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

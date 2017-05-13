@@ -30,8 +30,11 @@ class ItemUnfoldedCellView: UIView {
     @IBOutlet var sellerPicture: UIImageView!
     @IBOutlet var sellerName: UILabel!
     @IBOutlet var itemDescription: UITextView!
+<<<<<<< HEAD
     @IBOutlet var submitButton: UIButton!
     @IBOutlet weak var itemPrace1: UILabel!
+=======
+>>>>>>> 945d06f12e57d431e58a6cae297aa6725c4385a4
     
     init(index: Int) {
         super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
@@ -46,6 +49,7 @@ class ItemUnfoldedCellView: UIView {
     func setupContentView() {
         let contentView =  Bundle.main.loadNibNamed("ItemUnfoldedCellView", owner: self, options: nil)?[0] as! UIView
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+<<<<<<< HEAD
         
         
         let ref = FIRDatabase.database().reference()
@@ -78,7 +82,16 @@ class ItemUnfoldedCellView: UIView {
             print(error.localizedDescription)
         }
         
+=======
+
+>>>>>>> 945d06f12e57d431e58a6cae297aa6725c4385a4
         addSubview(contentView)
+    }
+    
+  
+    @IBAction func requestMessage(_ sender: Any) {
+        UIApplication.shared.openURL(NSURL(string: "https://m.me/1357531295")! as URL)
+        print("HELLLOOOO")
     }
     
     func customizeCell() {
@@ -96,4 +109,7 @@ class ItemUnfoldedCellView: UIView {
         setupContentView()
     }
     
+    @IBAction func UIApplicationsharedopenURLNSURLstringhttpsmme1357531295asURLrequestMessage(_ sender: Any) {
+    }
+   
 }
