@@ -16,6 +16,9 @@
 
 import Foundation
 import UIKit
+import FirebaseDatabase
+import FirebaseStorage
+import FirebaseStorageUI
 
 class ItemUnfoldedCellView: UIView {
     
@@ -26,9 +29,9 @@ class ItemUnfoldedCellView: UIView {
     @IBOutlet var itemPicture: UIImageView!
     @IBOutlet var sellerPicture: UIImageView!
     @IBOutlet var sellerName: UILabel!
-    @IBOutlet var itemPrice: UILabel!
     @IBOutlet var itemDescription: UITextView!
     @IBOutlet var submitButton: UIButton!
+    @IBOutlet weak var itemPrace1: UILabel!
     
     init(index: Int) {
         super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
@@ -43,6 +46,37 @@ class ItemUnfoldedCellView: UIView {
     func setupContentView() {
         let contentView =  Bundle.main.loadNibNamed("ItemUnfoldedCellView", owner: self, options: nil)?[0] as! UIView
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        
+        let ref = FIRDatabase.database().reference()
+        
+        ref.child("Listings").child("Object\(cellIndex-1)").observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            print("index: " + String(self.cellIndex))
+            let value = snapshot.value as! [String: String]
+            print(value)
+            self.itemName.text = value["ObjectName"]
+            self.itemPrace1.text = "$" + value["Price"]!
+            self.sellerName.text = value["PersonName"]
+            self.itemDescription.text = value["Description"]
+            
+            let storageRef = FIRStorage.storage().reference()
+            
+                    // Reference to an image file in Firebase Storage
+            print("images/\(value["ObjectName"]!).png")
+            let reference = storageRef.child("images/\(value["ObjectName"]!).png")
+          
+                    // UIImageView in your ViewController
+            let imageView: UIImageView = self.itemPicture
+            
+                    // Placeholder image
+            let placeholderImage = UIImage(named: "placeholder.jpg")
+            
+                    // Load the image using SDWebImage
+            imageView.sd_setImage(with: reference, placeholderImage: placeholderImage)
+        }) { (error) in
+            print(error.localizedDescription)
+        }
         
         addSubview(contentView)
     }

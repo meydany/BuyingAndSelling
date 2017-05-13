@@ -64,15 +64,16 @@ class ListItemViewController: FormViewController {
                         }
                     }
                     
-                    
+                    var userID = "asdads"
                     
                     let ref = FIRDatabase.database().reference()
                     let info = [
-                        "ObjectName": (rows[0] as! NameRow).value,
-                        "PersonName": (rows[1] as! NameRow).value,
+                        "PersonName": (rows[0] as! NameRow).value,
+                        "ObjectName": (rows[1] as! NameRow).value,
                         "Price": String(describing: (rows[2] as! IntRow).value!),
                         "picRef": picRef,
-                        "Description": String(describing: (rows[4] as! TextAreaRow).value!)
+                        "Description": String(describing: (rows[4] as! TextAreaRow).value!),
+                        "UserID": userID
                     ]
                     CELL_COUNT+=1
                     ref.child("Listings").child("Object\(CELL_COUNT-1)").setValue(info)

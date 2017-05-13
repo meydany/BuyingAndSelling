@@ -16,7 +16,7 @@ import BubbleTransition
 var DIVISION_HEIGHT: CGFloat = 150 //height of one division
 var NUM_OF_DIVISION: CGFloat = 3 //remember to also change in FoldingCell
 var CELL_SPACING: CGFloat = 8 //space between cells
-var CELL_COUNT: Int = 4
+var CELL_COUNT: Int = 3
 
 var currentIndex: Int = 0; //sus dont judge
 
@@ -31,7 +31,7 @@ class ItemListingController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        refresh()
+        //refresh()
         
         print("loaded")
         tableView.estimatedRowHeight = closeHeight
@@ -44,6 +44,7 @@ class ItemListingController: UITableViewController {
         }
         
         var refreshControl = UIRefreshControl()
+
         
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "Image"))
         self.tableView.addSubview(refreshControl)
@@ -73,7 +74,7 @@ class ItemListingController: UITableViewController {
         let ref = FIRDatabase.database().reference()
         ref.child("Listings").observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
-            let value = snapshot.value as! [String: [String: String]]
+            //let value = snapshot.value as! [String: [String: String]]
             //CELL_COUNT = value.count
             print("CELL COUNT: " + String(CELL_COUNT))
             //self.tableView.reloadData()

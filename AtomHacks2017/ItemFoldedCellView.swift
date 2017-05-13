@@ -42,21 +42,21 @@ class ItemFoldedCellView: UIView {
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         //contentView.frame = bounds
         
-//        let ref = FIRDatabase.database().reference()
-//        
-//        ref.child("Listings").child("Object\(cellIndex)").observeSingleEvent(of: .value, with: { (snapshot) in
-//            // Get user value
-//            print(self.cellIndex)
-//            let value = snapshot.value as! [String: String]
-//            print(value)
-//            self.mainLabel.text = value["ObjectName"]
-//            self.secondLabel.text = "$" + value["Price"]!
-//            self.thirdLabel.text = value["PersonName"]
-//            
-//            
-//        }) { (error) in
-//            print(error.localizedDescription)
-//        }
+        let ref = FIRDatabase.database().reference()
+        
+        ref.child("Listings").child("Object\(cellIndex-1)").observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            print("index: " + String(self.cellIndex))
+            let value = snapshot.value as! [String: String]
+            print(value)
+            self.itemName.text = value["ObjectName"]
+            self.itemCost.text = "$" + value["Price"]!
+            self.sellerName.text = value["PersonName"]
+            
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
         addSubview(contentView)
     }
     

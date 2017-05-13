@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -25,7 +25,7 @@
                 <outlet property="itemDescription" destination="gia-77-dye" id="hRN-Hk-JcD"/>
                 <outlet property="itemName" destination="qI3-lw-aZI" id="vBM-NR-pxG"/>
                 <outlet property="itemPicture" destination="0Uf-De-pIU" id="dH1-j8-8kZ"/>
-                <outlet property="itemPrice" destination="szP-Hy-c2u" id="vri-Sn-euy"/>
+                <outlet property="itemPrace1" destination="lXR-cc-62x" id="ze4-bb-9Jq"/>
                 <outlet property="numberLabel" destination="77r-l8-M66" id="Dan-ak-NXW"/>
                 <outlet property="sellerName" destination="szP-Hy-c2u" id="Kcc-Q2-Nv9"/>
                 <outlet property="sellerPicture" destination="KY6-rW-49N" id="nMq-Jn-1g2"/>
@@ -52,7 +52,7 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ItemImage" translatesAutoresizingMaskIntoConstraints="NO" id="0Uf-De-pIU">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ItemImage" translatesAutoresizingMaskIntoConstraints="NO" id="0Uf-De-pIU">
                     <rect key="frame" x="-7" y="49" width="375" height="144"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
