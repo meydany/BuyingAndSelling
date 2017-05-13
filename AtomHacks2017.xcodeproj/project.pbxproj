@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8653329F1EC78766009FE3DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8653329D1EC78766009FE3DC /* GoogleService-Info.plist */; };
+		865332A01EC78766009FE3DC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8653329E1EC78766009FE3DC /* Info.plist */; };
+		867CADAE1EC784EF00DB6406 /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867CADAC1EC784EF00DB6406 /* ImageRow.swift */; };
+		867CADAF1EC784EF00DB6406 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867CADAD1EC784EF00DB6406 /* ImagePickerController.swift */; };
 		869121511EC747090037FECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869121501EC747090037FECA /* AppDelegate.swift */; };
 		869121531EC747090037FECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869121521EC747090037FECA /* ViewController.swift */; };
 		869121561EC747090037FECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869121541EC747090037FECA /* Main.storyboard */; };
@@ -19,17 +23,21 @@
 		8691216B1EC755580037FECA /* ItemFoldedCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8691216A1EC755580037FECA /* ItemFoldedCellView.xib */; };
 		8691216D1EC758390037FECA /* ItemUnfoldedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8691216C1EC758390037FECA /* ItemUnfoldedCellView.swift */; };
 		8691216F1EC758480037FECA /* ItemUnfoldedCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8691216E1EC758480037FECA /* ItemUnfoldedCellView.xib */; };
+		869121711EC76FC70037FECA /* ListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869121701EC76FC70037FECA /* ListItemViewController.swift */; };
 		9D2C24F360DE64627D79E094 /* Pods_AtomHacks2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99D5BEDEA6C94AA6316C816 /* Pods_AtomHacks2017.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8653329D1EC78766009FE3DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8653329E1EC78766009FE3DC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		867CADAC1EC784EF00DB6406 /* ImageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
+		867CADAD1EC784EF00DB6406 /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
 		8691214D1EC747090037FECA /* AtomHacks2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtomHacks2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		869121501EC747090037FECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		869121521EC747090037FECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		869121551EC747090037FECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		869121571EC747090037FECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8691215A1EC747090037FECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8691215C1EC747090037FECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		869121621EC752A40037FECA /* ItemListingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListingController.swift; sourceTree = "<group>"; };
 		869121641EC753390037FECA /* ItemFoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemFoldingCell.swift; sourceTree = "<group>"; };
 		869121661EC753A70037FECA /* ConfigurationBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationBlock.swift; sourceTree = "<group>"; };
@@ -37,6 +45,7 @@
 		8691216A1EC755580037FECA /* ItemFoldedCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemFoldedCellView.xib; sourceTree = "<group>"; };
 		8691216C1EC758390037FECA /* ItemUnfoldedCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemUnfoldedCellView.swift; sourceTree = "<group>"; };
 		8691216E1EC758480037FECA /* ItemUnfoldedCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemUnfoldedCellView.xib; sourceTree = "<group>"; };
+		869121701EC76FC70037FECA /* ListItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemViewController.swift; sourceTree = "<group>"; };
 		A9DF5E70267049B9C592DD63 /* Pods-AtomHacks2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomHacks2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-AtomHacks2017/Pods-AtomHacks2017.release.xcconfig"; sourceTree = "<group>"; };
 		C9CCE3C960EBC8E7441F4F03 /* Pods-AtomHacks2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomHacks2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AtomHacks2017/Pods-AtomHacks2017.debug.xcconfig"; sourceTree = "<group>"; };
 		D99D5BEDEA6C94AA6316C816 /* Pods_AtomHacks2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AtomHacks2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,11 +101,15 @@
 				8691216A1EC755580037FECA /* ItemFoldedCellView.xib */,
 				8691216C1EC758390037FECA /* ItemUnfoldedCellView.swift */,
 				8691216E1EC758480037FECA /* ItemUnfoldedCellView.xib */,
+				869121701EC76FC70037FECA /* ListItemViewController.swift */,
 				869121541EC747090037FECA /* Main.storyboard */,
 				869121571EC747090037FECA /* Assets.xcassets */,
+				8653329D1EC78766009FE3DC /* GoogleService-Info.plist */,
+				8653329E1EC78766009FE3DC /* Info.plist */,
 				869121591EC747090037FECA /* LaunchScreen.storyboard */,
-				8691215C1EC747090037FECA /* Info.plist */,
 				869121661EC753A70037FECA /* ConfigurationBlock.swift */,
+				867CADAC1EC784EF00DB6406 /* ImageRow.swift */,
+				867CADAD1EC784EF00DB6406 /* ImagePickerController.swift */,
 			);
 			path = AtomHacks2017;
 			sourceTree = "<group>";
@@ -177,6 +190,8 @@
 				869121581EC747090037FECA /* Assets.xcassets in Resources */,
 				8691216B1EC755580037FECA /* ItemFoldedCellView.xib in Resources */,
 				869121561EC747090037FECA /* Main.storyboard in Resources */,
+				8653329F1EC78766009FE3DC /* GoogleService-Info.plist in Resources */,
+				865332A01EC78766009FE3DC /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +255,10 @@
 				869121631EC752A40037FECA /* ItemListingController.swift in Sources */,
 				869121531EC747090037FECA /* ViewController.swift in Sources */,
 				869121651EC753390037FECA /* ItemFoldingCell.swift in Sources */,
+				867CADAE1EC784EF00DB6406 /* ImageRow.swift in Sources */,
 				869121511EC747090037FECA /* AppDelegate.swift in Sources */,
+				867CADAF1EC784EF00DB6406 /* ImagePickerController.swift in Sources */,
+				869121711EC76FC70037FECA /* ListItemViewController.swift in Sources */,
 				869121691EC754DA0037FECA /* ItemFoldedCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

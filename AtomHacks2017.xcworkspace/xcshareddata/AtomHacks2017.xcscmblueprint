@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E33C2410EA5521E2142DF39BDE5FEBD33F0B66D6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E33C2410EA5521E2142DF39BDE5FEBD33F0B66D6" : 9223372036854775807,
+    "4A8DFDF6B09F86DC066AFEFB02D737BDC00DF57D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "83F0FE91-E424-434A-AA3C-2520AD3FC268",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E33C2410EA5521E2142DF39BDE5FEBD33F0B66D6" : "AtomHacks2017\/",
+    "4A8DFDF6B09F86DC066AFEFB02D737BDC00DF57D" : "AtomHacks2017\/AtomHacks2017\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AtomHacks2017",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AtomHacks2017.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/meydany\/AtomHacks2017.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4A8DFDF6B09F86DC066AFEFB02D737BDC00DF57D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/meydany\/AtomHacks2017.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E33C2410EA5521E2142DF39BDE5FEBD33F0B66D6"
+    }
+  ]
+}
