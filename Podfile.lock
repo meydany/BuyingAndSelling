@@ -1,0 +1,21 @@
+PODS:
+  - BubbleTransition (2.0.2)
+  - EasyPeasy (1.4.2)
+  - Eureka (3.0.0)
+  - FoldingCell (2.0.5)
+
+DEPENDENCIES:
+  - BubbleTransition (~> 2.0.0)
+  - EasyPeasy
+  - Eureka
+  - FoldingCell (~> 2.0.3)
+
+SPEC CHECKSUMS:
+  BubbleTransition: 7d98ed7d56f0940e83f350a98103ad473491c769
+  EasyPeasy: 50e7130b61f495ce105796e438d4136e2c8d2cc0
+  Eureka: f36fd440c3ebb7bfea0a4fbe6f16a05f1cb35906
+  FoldingCell: fb189fc746e95b722a1debf8ef455006b70cae2e
+
+PODFILE CHECKSUM: 9e960c89af0a49c7f2f87e5862b53dcb0a13fc97
+
+COCOAPODS: 1.2.0
