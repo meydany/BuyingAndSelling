@@ -6,14 +6,6 @@
 //  Copyright © 2017 AtomHacks. All rights reserved.
 //
 
-//
-//  ProfileFoldingCellView.swift
-//  FoldingCellTest
-//
-//  Created by Admin on 5/5/17.
-//  Copyright © 2017 Admin. All rights reserved.
-//
-
 import Foundation
 import UIKit
 import FirebaseDatabase
