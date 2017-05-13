@@ -16,9 +16,9 @@ import BubbleTransition
 var DIVISION_HEIGHT: CGFloat = 150 //height of one division
 var NUM_OF_DIVISION: CGFloat = 3 //remember to also change in FoldingCell
 var CELL_SPACING: CGFloat = 8 //space between cells
-var CELL_COUNT: Int = 2
+var CELL_COUNT: Int = 4
 
-var currentIndex: Int = -1; //sus dont judge
+var currentIndex: Int = 0; //sus dont judge
 
 class ItemListingController: UITableViewController {
 
