@@ -2,13 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<<<<<<< HEAD
-=======
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>kjknk</string>
 	<key>NSCameraUsageDescription</key>
 	<string>knkn</string>
->>>>>>> cb038c0d65a85a1e29148d39165cecc0cc0b0713
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>CFBundleDevelopmentRegion</key>

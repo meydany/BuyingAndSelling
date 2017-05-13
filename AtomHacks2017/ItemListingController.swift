@@ -10,16 +10,13 @@ import Foundation
 import UIKit
 import FoldingCell
 import EasyPeasy
-<<<<<<< HEAD
 import FirebaseDatabase
-=======
 import BubbleTransition
->>>>>>> cb038c0d65a85a1e29148d39165cecc0cc0b0713
 
 var DIVISION_HEIGHT: CGFloat = 150 //height of one division
 var NUM_OF_DIVISION: CGFloat = 3 //remember to also change in FoldingCell
 var CELL_SPACING: CGFloat = 8 //space between cells
-var CELL_COUNT: Int = 1
+var CELL_COUNT: Int = 2
 
 var currentIndex: Int = -1; //sus dont judge
 
@@ -30,7 +27,6 @@ class ItemListingController: UITableViewController {
     var itemHeight = [CGFloat](repeating: DIVISION_HEIGHT + (2 * CELL_SPACING), count:CELL_COUNT)
     
     var cellHeights = [CGFloat]()
-    var loaded = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,18 +35,6 @@ class ItemListingController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         
         registerCell()
-        let ref = FIRDatabase.database().reference()
-
-        ref.child("Listings").observeSingleEvent(of: .value, with: { (snapshot) in
-            // Get user value
-            let value = snapshot.value as! [String: [String: String]]
-            CELL_COUNT = value.count
-            self.loaded = true
-            self.tableView.reloadData()
-            print("reload")
-        }) { (error) in
-            print(error.localizedDescription)
-        }
         
         for _ in 0...CELL_COUNT {
             cellHeights.append(closeHeight)
@@ -81,12 +65,7 @@ class ItemListingController: UITableViewController {
     
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if loaded {
             return CELL_COUNT
-        }
-        else {
-            return 1
-        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

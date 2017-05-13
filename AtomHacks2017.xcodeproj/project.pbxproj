@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
-		84D672851EC77818006C8AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D672841EC77818006C8AE0 /* GoogleService-Info.plist */; };
-=======
-		8653329F1EC78766009FE3DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8653329D1EC78766009FE3DC /* GoogleService-Info.plist */; };
+		84D672871EC78D4F006C8AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D672861EC78D4F006C8AE0 /* GoogleService-Info.plist */; };
 		865332A01EC78766009FE3DC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8653329E1EC78766009FE3DC /* Info.plist */; };
 		867CADAE1EC784EF00DB6406 /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867CADAC1EC784EF00DB6406 /* ImageRow.swift */; };
 		867CADAF1EC784EF00DB6406 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867CADAD1EC784EF00DB6406 /* ImagePickerController.swift */; };
->>>>>>> cb038c0d65a85a1e29148d39165cecc0cc0b0713
 		869121511EC747090037FECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869121501EC747090037FECA /* AppDelegate.swift */; };
 		869121531EC747090037FECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869121521EC747090037FECA /* ViewController.swift */; };
 		869121561EC747090037FECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869121541EC747090037FECA /* Main.storyboard */; };
@@ -32,14 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
-		84D672841EC77818006C8AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-=======
-		8653329D1EC78766009FE3DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84D672861EC78D4F006C8AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8653329E1EC78766009FE3DC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		867CADAC1EC784EF00DB6406 /* ImageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
 		867CADAD1EC784EF00DB6406 /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
->>>>>>> cb038c0d65a85a1e29148d39165cecc0cc0b0713
 		8691214D1EC747090037FECA /* AtomHacks2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtomHacks2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		869121501EC747090037FECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		869121521EC747090037FECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,14 +104,9 @@
 				869121701EC76FC70037FECA /* ListItemViewController.swift */,
 				869121541EC747090037FECA /* Main.storyboard */,
 				869121571EC747090037FECA /* Assets.xcassets */,
-				8653329D1EC78766009FE3DC /* GoogleService-Info.plist */,
 				8653329E1EC78766009FE3DC /* Info.plist */,
 				869121591EC747090037FECA /* LaunchScreen.storyboard */,
-<<<<<<< HEAD
-				8691215C1EC747090037FECA /* Info.plist */,
-				84D672841EC77818006C8AE0 /* GoogleService-Info.plist */,
-=======
->>>>>>> cb038c0d65a85a1e29148d39165cecc0cc0b0713
+				84D672861EC78D4F006C8AE0 /* GoogleService-Info.plist */,
 				869121661EC753A70037FECA /* ConfigurationBlock.swift */,
 				867CADAC1EC784EF00DB6406 /* ImageRow.swift */,
 				867CADAD1EC784EF00DB6406 /* ImagePickerController.swift */,
@@ -203,12 +190,8 @@
 				869121581EC747090037FECA /* Assets.xcassets in Resources */,
 				8691216B1EC755580037FECA /* ItemFoldedCellView.xib in Resources */,
 				869121561EC747090037FECA /* Main.storyboard in Resources */,
-<<<<<<< HEAD
-				84D672851EC77818006C8AE0 /* GoogleService-Info.plist in Resources */,
-=======
-				8653329F1EC78766009FE3DC /* GoogleService-Info.plist in Resources */,
+				84D672871EC78D4F006C8AE0 /* GoogleService-Info.plist in Resources */,
 				865332A01EC78766009FE3DC /* Info.plist in Resources */,
->>>>>>> cb038c0d65a85a1e29148d39165cecc0cc0b0713
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
