@@ -12,6 +12,14 @@
 		869121561EC747090037FECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869121541EC747090037FECA /* Main.storyboard */; };
 		869121581EC747090037FECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 869121571EC747090037FECA /* Assets.xcassets */; };
 		8691215B1EC747090037FECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869121591EC747090037FECA /* LaunchScreen.storyboard */; };
+		869121631EC752A40037FECA /* ItemListingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869121621EC752A40037FECA /* ItemListingController.swift */; };
+		869121651EC753390037FECA /* ItemFoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869121641EC753390037FECA /* ItemFoldingCell.swift */; };
+		869121671EC753A70037FECA /* ConfigurationBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869121661EC753A70037FECA /* ConfigurationBlock.swift */; };
+		869121691EC754DA0037FECA /* ItemFoldedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869121681EC754DA0037FECA /* ItemFoldedCellView.swift */; };
+		8691216B1EC755580037FECA /* ItemFoldedCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8691216A1EC755580037FECA /* ItemFoldedCellView.xib */; };
+		8691216D1EC758390037FECA /* ItemUnfoldedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8691216C1EC758390037FECA /* ItemUnfoldedCellView.swift */; };
+		8691216F1EC758480037FECA /* ItemUnfoldedCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8691216E1EC758480037FECA /* ItemUnfoldedCellView.xib */; };
+		9D2C24F360DE64627D79E094 /* Pods_AtomHacks2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99D5BEDEA6C94AA6316C816 /* Pods_AtomHacks2017.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,16 @@
 		869121571EC747090037FECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8691215A1EC747090037FECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8691215C1EC747090037FECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		869121621EC752A40037FECA /* ItemListingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListingController.swift; sourceTree = "<group>"; };
+		869121641EC753390037FECA /* ItemFoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemFoldingCell.swift; sourceTree = "<group>"; };
+		869121661EC753A70037FECA /* ConfigurationBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationBlock.swift; sourceTree = "<group>"; };
+		869121681EC754DA0037FECA /* ItemFoldedCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemFoldedCellView.swift; sourceTree = "<group>"; };
+		8691216A1EC755580037FECA /* ItemFoldedCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemFoldedCellView.xib; sourceTree = "<group>"; };
+		8691216C1EC758390037FECA /* ItemUnfoldedCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemUnfoldedCellView.swift; sourceTree = "<group>"; };
+		8691216E1EC758480037FECA /* ItemUnfoldedCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemUnfoldedCellView.xib; sourceTree = "<group>"; };
+		A9DF5E70267049B9C592DD63 /* Pods-AtomHacks2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomHacks2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-AtomHacks2017/Pods-AtomHacks2017.release.xcconfig"; sourceTree = "<group>"; };
+		C9CCE3C960EBC8E7441F4F03 /* Pods-AtomHacks2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomHacks2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AtomHacks2017/Pods-AtomHacks2017.debug.xcconfig"; sourceTree = "<group>"; };
+		D99D5BEDEA6C94AA6316C816 /* Pods_AtomHacks2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AtomHacks2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2C24F360DE64627D79E094 /* Pods_AtomHacks2017.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21ACFDC315908892B1B886C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9CCE3C960EBC8E7441F4F03 /* Pods-AtomHacks2017.debug.xcconfig */,
+				A9DF5E70267049B9C592DD63 /* Pods-AtomHacks2017.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		869121441EC747090037FECA = {
 			isa = PBXGroup;
 			children = (
 				8691214F1EC747090037FECA /* AtomHacks2017 */,
 				8691214E1EC747090037FECA /* Products */,
+				21ACFDC315908892B1B886C5 /* Pods */,
+				A2A6630A65D8ACE9240DC0AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +86,27 @@
 			children = (
 				869121501EC747090037FECA /* AppDelegate.swift */,
 				869121521EC747090037FECA /* ViewController.swift */,
+				869121621EC752A40037FECA /* ItemListingController.swift */,
+				869121641EC753390037FECA /* ItemFoldingCell.swift */,
+				869121681EC754DA0037FECA /* ItemFoldedCellView.swift */,
+				8691216A1EC755580037FECA /* ItemFoldedCellView.xib */,
+				8691216C1EC758390037FECA /* ItemUnfoldedCellView.swift */,
+				8691216E1EC758480037FECA /* ItemUnfoldedCellView.xib */,
 				869121541EC747090037FECA /* Main.storyboard */,
 				869121571EC747090037FECA /* Assets.xcassets */,
 				869121591EC747090037FECA /* LaunchScreen.storyboard */,
 				8691215C1EC747090037FECA /* Info.plist */,
+				869121661EC753A70037FECA /* ConfigurationBlock.swift */,
 			);
 			path = AtomHacks2017;
+			sourceTree = "<group>";
+		};
+		A2A6630A65D8ACE9240DC0AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D99D5BEDEA6C94AA6316C816 /* Pods_AtomHacks2017.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8691215F1EC747090037FECA /* Build configuration list for PBXNativeTarget "AtomHacks2017" */;
 			buildPhases = (
+				27DF28E0201ABFEE4BFDE76B /* [CP] Check Pods Manifest.lock */,
 				869121491EC747090037FECA /* Sources */,
 				8691214A1EC747090037FECA /* Frameworks */,
 				8691214B1EC747090037FECA /* Resources */,
+				92D354BF786217662CCA465A /* [CP] Embed Pods Frameworks */,
+				706AD3C8D4FC6228F00A4645 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +144,7 @@
 				TargetAttributes = {
 					8691214C1EC747090037FECA = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 9EKLF2UG2H;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,20 +173,75 @@
 			buildActionMask = 2147483647;
 			files = (
 				8691215B1EC747090037FECA /* LaunchScreen.storyboard in Resources */,
+				8691216F1EC758480037FECA /* ItemUnfoldedCellView.xib in Resources */,
 				869121581EC747090037FECA /* Assets.xcassets in Resources */,
+				8691216B1EC755580037FECA /* ItemFoldedCellView.xib in Resources */,
 				869121561EC747090037FECA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27DF28E0201ABFEE4BFDE76B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		706AD3C8D4FC6228F00A4645 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AtomHacks2017/Pods-AtomHacks2017-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92D354BF786217662CCA465A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AtomHacks2017/Pods-AtomHacks2017-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		869121491EC747090037FECA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				869121671EC753A70037FECA /* ConfigurationBlock.swift in Sources */,
+				8691216D1EC758390037FECA /* ItemUnfoldedCellView.swift in Sources */,
+				869121631EC752A40037FECA /* ItemListingController.swift in Sources */,
 				869121531EC747090037FECA /* ViewController.swift in Sources */,
+				869121651EC753390037FECA /* ItemFoldingCell.swift in Sources */,
 				869121511EC747090037FECA /* AppDelegate.swift in Sources */,
+				869121691EC754DA0037FECA /* ItemFoldedCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +362,10 @@
 		};
 		869121601EC747090037FECA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9CCE3C960EBC8E7441F4F03 /* Pods-AtomHacks2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9EKLF2UG2H;
 				INFOPLIST_FILE = AtomHacks2017/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atomhacks.AtomHacks2017;
@@ -270,8 +376,10 @@
 		};
 		869121611EC747090037FECA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9DF5E70267049B9C592DD63 /* Pods-AtomHacks2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9EKLF2UG2H;
 				INFOPLIST_FILE = AtomHacks2017/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atomhacks.AtomHacks2017;
@@ -299,6 +407,7 @@
 				869121611EC747090037FECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
