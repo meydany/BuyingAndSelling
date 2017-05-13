@@ -15,12 +15,9 @@ pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
 pod 'FirebaseUI/Storage'
-
- pod 'Firebase/Core'
-  pod 'Firebase/Database'
-  pod 'Firebase/Storage'
-  pod 'FirebaseUI/Storage'
-
+pod 'FacebookCore'
+pod 'FacebookLogin'
+pod 'FacebookShare'
   # Pods for AtomHacks2017
 
 end

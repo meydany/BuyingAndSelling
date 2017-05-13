@@ -35,11 +35,14 @@ class ListItemViewController: FormViewController {
                     cell.accessoryView?.layer.cornerRadius = 17
                     cell.accessoryView?.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
             }
+            <<< TextAreaRow(){row in
+                row.placeholder = "Description"
+            }
             
             +++ Section("Section2")
-            <<< SwitchRow(){
+            <<< ButtonRow(){
                 $0.title = "Submit"
-                }.onChange({ row in
+                }.onCellSelection({ row in
                     let pic = (self.form.allRows[3] as! ImageRow).value
                     //self.present(TestVC(pic: pic!), animated: true, completion: nil)
                     print("submitting")
@@ -66,12 +69,14 @@ class ListItemViewController: FormViewController {
                     let ref = FIRDatabase.database().reference()
                     let info = [
                         "ObjectName": (rows[0] as! NameRow).value,
-                        "personName": (rows[1] as! NameRow).value,
-                        "price": String(describing: (rows[2] as! IntRow).value!),
-                        "picRef": picRef
+                        "PersonName": (rows[1] as! NameRow).value,
+                        "Price": String(describing: (rows[2] as! IntRow).value!),
+                        "picRef": picRef,
+                        "Description": String(describing: (rows[4] as! TextAreaRow).value!)
                     ]
-                    
-                    ref.child("Listings").child("Object\(times)").setValue(info)
+                    CELL_COUNT+=1
+                    ref.child("Listings").child("Object\(CELL_COUNT-1)").setValue(info)
+                
                 })
         
     }
